@@ -103,7 +103,12 @@ enum {
 #else
     __BL_SPD_NEXT = __PROF3_NEXT,
 #endif
-    NEW_SAFE_RANGE = __BL_SPD_NEXT,
+    DB_CYCL = __BL_SPD_NEXT,
+    DB_SHOW,
+    DB_INC,
+    DB_DEC,
+    __DB_NEXT,
+    NEW_SAFE_RANGE = __DB_NEXT,
 };
 
 #define KC_MCTRL KC_MAC_MISSION_CONTROL

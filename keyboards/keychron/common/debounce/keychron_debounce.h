@@ -52,5 +52,8 @@ bool debounce(matrix_row_t raw[], matrix_row_t cooked[], uint8_t num_rows, bool 
 void debounce_init(uint8_t num_rows);
 void debounce_config_reset(void);
 
+void debounce_set(uint8_t new_debounce_type, uint8_t time, bool force);
+bool debounce_save(void);
+
 void debounce_free(void);
 void debounce_rx(uint8_t *data, uint8_t length);

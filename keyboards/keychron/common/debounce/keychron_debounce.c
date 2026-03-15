@@ -44,7 +44,7 @@
 #define DEBOUNCE_SET_QMK 0
 #define OFFSET_DEBOUNCE ((uint8_t *)(EECONFIG_BASE_DYNAMIC_DEBOUNCE))
 
-static uint8_t    debounce_type = 0;
+uint8_t           debounce_type = 0;
 uint8_t           debounce_time = 0;
 static debounce_t debounce_func = {NULL, NULL, NULL};
 
@@ -114,7 +114,7 @@ void debounce_free(void) {
     if (debounce_func.debounce_free) debounce_func.debounce_free();
 }
 
-static bool debounce_save(void) {
+bool debounce_save(void) {
     eeprom_update_byte(OFFSET_DEBOUNCE, debounce_type);
     eeprom_update_byte(OFFSET_DEBOUNCE + 1, debounce_time);
     return true;

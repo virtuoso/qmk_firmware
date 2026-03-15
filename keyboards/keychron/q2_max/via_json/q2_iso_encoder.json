@@ -80,7 +80,11 @@
     {"name": "Bluetooth Host 2", "title": "Bluetooth Host 2", "shortName": "BTH2"},
     {"name": "Bluetooth Host 3", "title": "Bluetooth Host 3", "shortName": "BTH3"},
     {"name": "2.4G", "title": "2.4G", "shortName": "2.4G"},
-    {"name": "Battery Level", "title": "Show battery level", "shortName": "Batt"}
+    {"name": "Battery Level", "title": "Show battery level", "shortName": "Batt"},
+    {"name": "Debounce Cycle", "title": "Cycle Debounce Algorithm", "shortName": "DBCyc"},
+    {"name": "Debounce Show", "title": "Show Debounce Time and Algorithm", "shortName": "DBShow"},
+    {"name": "Debounce +5ms", "title": "Increase Debounce", "shortName": "DB+5"},
+    {"name": "Debounce -5ms", "title": "Decrease Debounce", "shortName": "DB-5"}
   ],
   "matrix": {"rows": 5, "cols" : 15},
   "layouts": {

@@ -74,7 +74,7 @@
         "layer_count": 5
     },
     "build": {
-        "debounce_type": "sym_eager_pk"
+        "debounce_type": "custom"
     },
     "debounce": 20
 }
