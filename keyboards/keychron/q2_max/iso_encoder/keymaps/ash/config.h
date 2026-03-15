@@ -8,10 +8,10 @@
 #define MOUSEKEY_DELAY 0
 
 /* Interval between movement steps (ms); lower = smoother */
-#define MOUSEKEY_INTERVAL 5
+#define MOUSEKEY_INTERVAL 8
 
 /* Pixels per step at maximum speed */
-#define MOUSEKEY_MAX_SPEED 20
+#define MOUSEKEY_MAX_SPEED 14
 
 /* Steps to reach max speed; lower = more aggressive acceleration */
 #define MOUSEKEY_TIME_TO_MAX 255
