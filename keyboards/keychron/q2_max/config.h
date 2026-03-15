@@ -18,6 +18,9 @@
 
 #include "eeconfig_kb.h"
 
+/* Debounce Default */
+#define DEFAULT_DEBOUNCE_TYPE DEBOUNCE_ASYM_EAGER_DEFER_PER_KEY
+
 /* Encoder Configuration */
 #define ENCODER_DEFAULT_POS 0x3
 #define ENCODER_MAP_KEY_DELAY 2
