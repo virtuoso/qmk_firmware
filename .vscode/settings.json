@@ -35,7 +35,10 @@
     "[json]": {
         "editor.formatOnSave": false
     },
-    "clangd.arguments": ["--header-insertion=never"],
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--compile-commands-dir=${workspaceFolder}"
+    ],
     "json.schemas": [
         {
             "fileMatch": ["qmk.json"],
