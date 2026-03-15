@@ -1,3 +1,19 @@
+# QMK for Keychron Q2 Max ISO KNOB
+
+This is a fork of [Keychron's fork of QMK](https://github.com/Keychron/qmk_firmware.git), dedicated specifically for
+Q2 Max ISO/ANSI KNOB (q2_max iso_encoder / ansi_encoder). Reasons:
+* stock firmware has double click issue that makes my backspace nuke 2 characters with one press one out of three times; vendor's firmware that claims to address this (1.1.1) is only available for the ANSI variant, and even that increases debounce time to 50ms, which is way too much for neurotic coding
+* changing mouse / wheel parameters requires building firmware, but none of the Keychron's fork's branches match the actual firmware on their site (1.1.0).
+
+Meanwhile, Keychron's tree has `2025q3` branch that seems to be their bleeding edge, it contains rewrites for the matrix scan,
+multiple debounce algorithms, actuation profiles, xinput/game controller emulation etc. This branch does not, however, have Q2 Max
+keyboard definitions.
+
+What this fork does is:
+* forward ports Q2 Max keyboard definitions onto 2025q3
+* adds indicator and key codes for the debounce algorithms and time
+* adds "ash" keymap with my config settings
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
